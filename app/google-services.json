@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "225955144223",
+    "project_id": "app-cube-david",
+    "storage_bucket": "app-cube-david.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:225955144223:android:62852288c87728fd246b2a",
+        "android_client_info": {
+          "package_name": "com.example.appcubedavid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "225955144223-tetp006hqbjsu59l91asn8ospnd57vmh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbxBXWO7WqxiJFzrUBccvB2GWO4l-Iuy0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "225955144223-tetp006hqbjsu59l91asn8ospnd57vmh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
