@@ -31,8 +31,7 @@ public class HomeActivity extends AppCompatActivity {
             switch (item.getItemId()){//switch que utiliza la id del boton que es pulsado
 
                 case R.id.listaAmigos:
-                    //ir a la lista de amigos
-                    Toast.makeText(this, "Ir a la lista de amigos", Toast.LENGTH_SHORT).show();
+                    irAmigos();
                     break;
                 case R.id.infoUsuario:
                     //ir a información sobre el usuario
@@ -72,5 +71,12 @@ public class HomeActivity extends AppCompatActivity {
         i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(i);
     }
+
+    public void irAmigos(){
+        Intent i = new Intent(this, AmigosActivity.class);
+        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(i);
+    }
+
 
 }
