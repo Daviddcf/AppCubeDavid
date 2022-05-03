@@ -68,7 +68,6 @@
                                 android:layout_gravity="center_vertical"
                                 android:adjustViewBounds="true"
                                 android:background="#DADADA"
-                                android:src="@drawable/gente3"
                                 app:srcCompat="@android:drawable/ic_menu_search" />
 
                         </androidx.cardview.widget.CardView>
@@ -80,7 +79,7 @@
                     android:layout_height="49dp"
                     android:layout_gravity="center_vertical"
                     android:layout_margin="10dp"
-                    app:cardCornerRadius="20dp"
+                    app:cardCornerRadius="30dp"
                     app:cardElevation="0dp">
 
                     <ImageView
@@ -153,7 +152,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="10dp"
                             android:layout_weight="1"
-                            app:cardCornerRadius="20dp"
+                            app:cardCornerRadius="30dp"
                             app:cardElevation="0dp">
 
                             <ImageView
@@ -326,7 +325,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="10dp"
                             android:layout_weight="1"
-                            app:cardCornerRadius="20dp"
+                            app:cardCornerRadius="30dp"
                             app:cardElevation="0dp">
 
                             <ImageView

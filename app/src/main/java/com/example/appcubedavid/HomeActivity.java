@@ -9,13 +9,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class HomeActivity extends AppCompatActivity {
 
-    int imagenes[]={R.drawable.gente1, R.drawable.gente2, R.drawable.gente3, R.drawable.gente4, R.drawable.gente5, R.drawable.gente6, };
+    //arrays que guardan los datos que luego se muestran en el slider de "Cuentos"
+    int fotoHistoria[]={R.drawable.gente1, R.drawable.gente2, R.drawable.gente3, R.drawable.gente4, R.drawable.gente5, R.drawable.gente6 };
+    String nombres[]={"Hurin Seary","Victor Exrix","Eduardo Kelly","Pepe","Manuel","Pablo"};
+    int fotosPerfil[]={R.drawable.gente1, R.drawable.gente2, R.drawable.gente3, R.drawable.gente4, R.drawable.gente5, R.drawable.gente6 };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +52,7 @@ public class HomeActivity extends AppCompatActivity {
 
         ViewPager viewPager = findViewById(R.id.viewPagerHome);
 
-        AdapterViewPagerHome adapterViewPagerHome = new AdapterViewPagerHome(this,imagenes);
+        AdapterViewPagerHome adapterViewPagerHome = new AdapterViewPagerHome(this, fotoHistoria,nombres,fotosPerfil);
         viewPager.setAdapter(adapterViewPagerHome);
 
         Button cerrarSesion = findViewById(R.id.b_cerrarSesion);
