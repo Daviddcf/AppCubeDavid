@@ -33,22 +33,10 @@ public class HomeFragment extends Fragment {
         AdapterViewPagerHome adapterViewPagerHome = new AdapterViewPagerHome(getContext(), fotoHistoria,nombres,fotosPerfil);
         viewPager.setAdapter(adapterViewPagerHome);
 
-        Button cerrarSesion = root.findViewById(R.id.b_cerrarSesion);
-        cerrarSesion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FirebaseAuth.getInstance().signOut();
-                Toast.makeText(getContext(), "Sesión cerrada", Toast.LENGTH_SHORT).show();
-                irLogin();
-            }
-        });
+
         return root;
     }
 
-    public void irLogin(){
-        Intent i = new Intent(getContext(), LoginActivity.class);
-        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(i);
-    }
+
 
 }

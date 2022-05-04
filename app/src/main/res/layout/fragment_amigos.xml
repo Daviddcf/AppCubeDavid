@@ -22,7 +22,7 @@
             android:orientation="vertical">
 
             <ImageButton
-                android:id="@+id/b_volver"
+                android:id="@+id/b_volver_amigos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#FFFFFF"
