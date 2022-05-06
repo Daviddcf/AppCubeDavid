@@ -12,8 +12,7 @@
         app:cardElevation="0dp"
         app:contentPaddingLeft="10dp"
         app:contentPaddingRight="10dp"
-        tools:layout_editor_absoluteX="-3dp"
-        tools:layout_editor_absoluteY="-3dp">
+        tools:ignore="MissingConstraints">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

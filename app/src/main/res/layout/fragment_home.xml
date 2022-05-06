@@ -121,13 +121,10 @@
                     android:textColor="#CD5A5A" />
             </LinearLayout>
 
-            <androidx.viewpager.widget.ViewPager
-                android:id="@+id/viewPagerHome"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_cuentos"
                 android:layout_width="match_parent"
-                android:layout_height="214dp"
-                tools:ignore="SpeakableTextPresentCheck">
-
-            </androidx.viewpager.widget.ViewPager>
+                android:layout_height="200dp" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
