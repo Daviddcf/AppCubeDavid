@@ -3,7 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout-large/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout-large/activity_home.xml" value="0.18333333333333332" />
+        <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout-large/activity_inscribirse.xml" value="0.18" />
+        <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout-large/activity_login.xml" value="0.18" />
+        <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout-large/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout-large/activity_restablecer_pwd.xml" value="0.18" />
+        <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout-large/fragment_ajustes.xml" value="0.18" />
+        <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout-large/fragment_amigos.xml" value="0.18" />
+        <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout-large/fragment_chat.xml" value="0.16" />
+        <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout-large/fragment_home.xml" value="0.18" />
+        <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout-large/fragment_perfil.xml" value="0.25" />
+        <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout-large/item_rv_chat_recientes.xml" value="0.1" />
         <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout-normal/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout-small/activity_main.xml" value="1.5" />
         <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout-xlarge/activity_main.xml" value="0.25" />
@@ -20,15 +30,16 @@
         <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout/fragment_amigos.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout/fragment_chat.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout/fragment_first.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout/fragment_perfil.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout/fragment_second.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout/item_rv_chat_recientes.xml" value="0.33" />
-        <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout/item_rv_cuentos.xml" value="0.5" />
+        <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout/item_rv_cuentos.xml" value="0.33" />
         <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout/item_rv_posts.xml" value="0.33" />
         <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout/itemviewpager.xml" value="0.25" />
         <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout/itemviewpagerhome.xml" value="0.33" />
         <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.308" />
       </map>
     </option>
   </component>
