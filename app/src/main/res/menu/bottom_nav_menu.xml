@@ -5,17 +5,22 @@
     <item
         android:id="@+id/listaAmigos"
         android:title="Listado amigos"
-        android:icon="@drawable/ic_baseline_search_24"/>
+        android:icon="@drawable/ic_baseline_search_24"
+        />
     <item
         android:title="Info usuario"
         android:id="@+id/infoUsuario"
-        android:icon="@drawable/ic_baseline_person_24"/>
+        android:icon="@drawable/ic_baseline_person_24"
+        />
     <item
         android:title="Chat"
         android:id="@+id/chat"
-        android:icon="@drawable/ic_baseline_chat_24"/>
+        android:icon="@drawable/ic_baseline_chat_24"
+        />
     <item
         android:title="Ajustes"
         android:id="@+id/ajustes"
-        android:icon="@drawable/ic_baseline_home_repair_service_24"/>
+        android:icon="@drawable/ic_baseline_home_repair_service_24"
+        />
+
 </menu>

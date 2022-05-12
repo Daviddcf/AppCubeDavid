@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InscribirseActivity">
+    tools:context=".LoginActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -21,8 +21,10 @@
 
             <ImageView
                 android:id="@+id/iv_hoja"
-                android:layout_width="match_parent"
-                android:layout_height="320dp"
+                android:layout_width="600dp"
+                android:layout_height="470dp"
+                android:layout_gravity="left"
+                android:adjustViewBounds="true"
                 app:srcCompat="@drawable/hoja" />
 
             <LinearLayout
@@ -32,85 +34,51 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/tv_tituloinscribirse"
+                    android:id="@+id/tv_nombre"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
-                    android:fontFamily="sans-serif"
-                    android:text="Inscribirse"
-                    android:textColor="#000000"
-                    android:textSize="60sp"
-                    android:textStyle="bold"
-                    app:autoSizeTextType="none" />
-
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
-                    android:lineSpacingExtra="8sp"
-                    android:text="Ingrese su dirección de correo electrónico en este campo para recuperar su contraseña"
-                    android:textColor="#BDBDBD"
-                    android:textSize="34sp" />
-
-                <TextView
-                    android:id="@+id/tv_nombre_inscribirse"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
                     android:text="Nombre de usuario"
                     android:textSize="34sp" />
 
                 <EditText
-                    android:id="@+id/et_nombre_inscribirse"
+                    android:id="@+id/et_nombre_login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
                     android:ems="10"
                     android:inputType="textPersonName"
                     android:textSize="34sp" />
 
                 <TextView
-                    android:id="@+id/tv_contraseña1_inscribirse"
+                    android:id="@+id/tv_contraseña"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
                     android:text="Contraseña"
                     android:textSize="34sp" />
 
                 <EditText
-                    android:id="@+id/et_contraseña1_inscribirse"
+                    android:id="@+id/et_contraseña_login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
                     android:ems="10"
                     android:inputType="textPassword"
                     android:textSize="34sp" />
 
                 <TextView
-                    android:id="@+id/tv_contraseña2_inscribirse"
-                    android:layout_width="match_parent"
+                    android:id="@+id/tv_resetpwd"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:text="Contraseña"
-                    android:textSize="34sp" />
-
-                <EditText
-                    android:id="@+id/et_contraseña2_inscribirse"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:ems="10"
-                    android:inputType="textPassword"
-                    android:textSize="34sp" />
+                    android:text="¿Se te olvido tu contraseña?"
+                    android:textColor="#3957FF"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
 
                 <Button
-                    android:id="@+id/b_registrarse_inscribirse"
+                    android:id="@+id/b_iniciarsesion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:backgroundTint="#0073FF"
-                    android:text="Registrarse"
+                    android:layout_marginVertical="5dp"
+                    android:backgroundTint="#FF0000"
+                    android:text="Iniciar sesión"
                     android:textAllCaps="false"
                     android:textSize="34sp" />
 
@@ -118,28 +86,48 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="5dp"
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/tv_tienescuenta_inscribirse"
+                        android:id="@+id/textView3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:layout_marginVertical="5dp"
                         android:layout_marginRight="5dp"
-                        android:text="¿Ya tienes cuenta?"
+                        android:text="¿No tienes cuenta?"
                         android:textSize="34sp" />
 
                     <TextView
-                        android:id="@+id/tv_registrarse_inscribirse"
+                        android:id="@+id/tv_inscribirse"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="Registrarse."
+                        android:layout_marginVertical="5dp"
+                        android:text="Inscribirse."
                         android:textColor="#3957FF"
                         android:textSize="34sp"
                         android:textStyle="bold" />
                 </LinearLayout>
+
+                <Button
+                    android:id="@+id/b_google"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:backgroundTint="#D3562E"
+                    android:text="Conéctate con Google"
+                    android:textAllCaps="false"
+                    android:textSize="34sp" />
+
+                <Button
+                    android:id="@+id/b_facebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#213EDF"
+                    android:text="Conéctate con Facebook"
+                    android:textAllCaps="false"
+                    android:textSize="34sp" />
 
             </LinearLayout>
 
