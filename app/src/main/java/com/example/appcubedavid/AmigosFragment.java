@@ -25,7 +25,7 @@ public class AmigosFragment extends Fragment {
             public void onClick(View v) {//vuelve al fragment home
                 HomeFragment homeFragment = new HomeFragment();
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
-                transaction.replace(R.id.frameLayout, homeFragment);
+                transaction.replace(R.id.frameLayoutFragments, homeFragment);
                 transaction.commit();
             }
         });

@@ -27,9 +27,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@android:color/transparent"
+                android:gravity="center"
                 android:orientation="horizontal"
-                android:translationY="-600dp"
-                android:gravity="center">
+                android:translationY="-600dp">
 
                 <ImageButton
                     android:id="@+id/b_volver_perfil"
@@ -61,121 +61,154 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:orientation="vertical"
-                android:translationY="-100dp">
+                android:translationY="-140dp"
+                android:translationZ="100dp">
 
                 <androidx.cardview.widget.CardView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    app:cardBackgroundColor="#FFFFFF"
+                    app:cardCornerRadius="50dp"
+                    app:cardElevation="0dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        app:cardCornerRadius="50dp">
+
+                        <ImageView
+                            android:id="@+id/iv_fotoperfil"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/gente6" />
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tv_nombrePerfil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Alicia Maghyn"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="50"
+                    android:text="\@California" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:translationY="-250dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="10dp"
-                    app:cardCornerRadius="20dp">
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
 
                         <androidx.cardview.widget.CardView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
                             android:layout_gravity="center"
-                            app:cardCornerRadius="40dp"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            app:cardCornerRadius="30dp"
                             app:cardElevation="0dp">
 
+
                             <ImageView
-                                android:id="@+id/iv_fotoperfil"
+                                android:id="@+id/imageView2"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:adjustViewBounds="true"
-                                android:src="@drawable/gente6" />
+                                android:padding="5dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/facebook" />
 
                         </androidx.cardview.widget.CardView>
 
-                        <TextView
-                            android:id="@+id/tv_nombrePerfil"
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            app:cardCornerRadius="30dp"
+                            app:cardElevation="0dp">
+
+
+                            <ImageView
+                                android:id="@+id/imageView6"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/pinterest" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:text="Alicia Maghyn"
-                            android:textColor="#000000"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/textView6"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_weight="50"
-                            android:text="\@California" />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="50"
-                            android:orientation="horizontal"
-                            android:padding="20dp">
-
-                            <androidx.cardview.widget.CardView
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="center"
-                                android:layout_weight="1"
-                                app:cardCornerRadius="30dp"
-                                app:cardElevation="0dp">
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            app:cardCornerRadius="30dp"
+                            app:cardElevation="0dp">
 
 
-                                <ImageView
-                                    android:id="@+id/imageView2"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:src="@drawable/facebook" />
-
-                            </androidx.cardview.widget.CardView>
-
-                            <androidx.cardview.widget.CardView
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="center"
-                                android:layout_weight="1"
-                                app:cardCornerRadius="30dp"
-                                app:cardElevation="0dp">
-
-
-                                <ImageView
-                                    android:id="@+id/imageView6"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:src="@drawable/pinterest" />
-
-                            </androidx.cardview.widget.CardView>
-
-                            <androidx.cardview.widget.CardView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_weight="1"
-                                app:cardCornerRadius="30dp"
-                                app:cardElevation="0dp">
-
-
-                                <Button
-                                    android:id="@+id/buttonSeguir"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:backgroundTint="@color/orange"
-                                    android:text="Seguir" />
-                            </androidx.cardview.widget.CardView>
-                        </LinearLayout>
-
+                            <Button
+                                android:id="@+id/buttonSeguir"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:backgroundTint="@color/orange"
+                                android:text="Seguir" />
+                        </androidx.cardview.widget.CardView>
                     </LinearLayout>
-                </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:translationY="-200dp">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
@@ -230,6 +263,8 @@
                                 android:layout_height="wrap_content"
                                 android:text="76"
                                 android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="24sp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -238,6 +273,8 @@
                                 android:layout_height="wrap_content"
                                 android:text="22"
                                 android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="24sp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -246,6 +283,8 @@
                                 android:layout_height="wrap_content"
                                 android:text="166"
                                 android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="24sp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -254,6 +293,8 @@
                                 android:layout_height="wrap_content"
                                 android:text="1.2k"
                                 android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="24sp"
                                 android:textStyle="bold" />
                         </TableRow>
 
@@ -318,6 +359,15 @@
                     android:layout_margin="10dp"
                     android:text="Implementación de tecnologías para almacenar datos modificables basados en específicos de tecnologías para almacenar datos basados en específicos para almacenar datos basados en datos basados en específicos de específicos" />
 
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Fotos"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
                 <TableLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -340,6 +390,7 @@
                                 android:id="@+id/imageView13"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:scaleType="centerCrop"
                                 android:src="@drawable/gente1" />
                         </androidx.cardview.widget.CardView>
 
@@ -355,6 +406,7 @@
                                 android:id="@+id/imageView14"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:scaleType="centerCrop"
                                 android:src="@drawable/gente2" />
                         </androidx.cardview.widget.CardView>
 
@@ -370,6 +422,7 @@
                                 android:id="@+id/imageView15"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:scaleType="centerCrop"
                                 android:src="@drawable/gente3" />
                         </androidx.cardview.widget.CardView>
 
@@ -386,6 +439,7 @@
                                 android:id="@+id/imageView16"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:scaleType="centerCrop"
                                 android:src="@drawable/gente4" />
                         </androidx.cardview.widget.CardView>
 
@@ -409,6 +463,7 @@
                                 android:id="@+id/imageView17"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:scaleType="centerCrop"
                                 android:src="@drawable/gente5" />
                         </androidx.cardview.widget.CardView>
 
@@ -425,6 +480,7 @@
                                 android:id="@+id/imageView18"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:scaleType="centerCrop"
                                 android:src="@drawable/gente6" />
                         </androidx.cardview.widget.CardView>
 
@@ -441,6 +497,7 @@
                                 android:id="@+id/imageView19"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:scaleType="centerCrop"
                                 android:src="@drawable/gente1" />
                         </androidx.cardview.widget.CardView>
 
@@ -456,6 +513,7 @@
                                 android:id="@+id/imageView20"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:scaleType="centerCrop"
                                 android:src="@drawable/gente2" />
                         </androidx.cardview.widget.CardView>
                     </TableRow>
@@ -482,11 +540,11 @@
 
                             <androidx.cardview.widget.CardView
                                 android:layout_width="50dp"
-                                android:layout_height="49dp"
+                                android:layout_height="50dp"
                                 android:layout_gravity="center_vertical"
                                 android:layout_margin="10dp"
                                 android:layout_weight="1"
-                                app:cardCornerRadius="30dp"
+                                app:cardCornerRadius="50dp"
                                 app:cardElevation="0dp">
 
                                 <ImageView
@@ -494,6 +552,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:adjustViewBounds="true"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/gente3" />
                             </androidx.cardview.widget.CardView>
 
@@ -635,23 +694,6 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="1"
-                    app:cardBackgroundColor="@android:color/transparent"
-                    app:cardCornerRadius="30dp"
-                    app:cardElevation="0dp">
-
-                    <Button
-                        android:id="@+id/b_cerrarSesion"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="@color/orange"
-                        android:text="Cerrar sesion" />
-                </androidx.cardview.widget.CardView>
             </LinearLayout>
 
         </LinearLayout>

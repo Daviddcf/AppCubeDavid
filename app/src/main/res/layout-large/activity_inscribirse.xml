@@ -22,7 +22,8 @@
             <ImageView
                 android:id="@+id/iv_hoja"
                 android:layout_width="match_parent"
-                android:layout_height="320dp"
+                android:layout_height="600dp"
+                android:scaleType="centerCrop"
                 app:srcCompat="@drawable/hoja" />
 
             <LinearLayout

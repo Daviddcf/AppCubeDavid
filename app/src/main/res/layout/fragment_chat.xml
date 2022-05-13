@@ -118,6 +118,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
                                 android:src="@drawable/gente3" />
 
                         </androidx.cardview.widget.CardView>
@@ -193,6 +194,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
                                 android:src="@drawable/gente1" />
 
                         </androidx.cardview.widget.CardView>
@@ -268,6 +270,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
                                 android:src="@drawable/gente2" />
 
                         </androidx.cardview.widget.CardView>

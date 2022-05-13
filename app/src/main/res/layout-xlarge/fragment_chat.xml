@@ -18,9 +18,11 @@
 
             <ImageButton
                 android:id="@+id/b_volver_chat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="84dp"
+                android:layout_height="72dp"
                 android:background="@android:color/transparent"
+                android:scaleX="2"
+                android:scaleY="2"
                 android:src="?attr/homeAsUpIndicator" />
 
             <TextView
@@ -118,6 +120,7 @@
                                 android:layout_height="70dp"
                                 android:layout_weight="1"
                                 android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
                                 android:src="@drawable/gente3" />
 
                         </androidx.cardview.widget.CardView>
@@ -196,6 +199,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
                                 android:src="@drawable/gente1" />
 
                         </androidx.cardview.widget.CardView>
@@ -274,6 +278,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
                                 android:src="@drawable/gente2" />
 
                         </androidx.cardview.widget.CardView>

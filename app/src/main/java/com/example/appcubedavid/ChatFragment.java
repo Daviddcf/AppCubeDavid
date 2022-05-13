@@ -10,7 +10,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.ImageButton;
 
 import java.util.ArrayList;
@@ -46,7 +45,7 @@ public class ChatFragment extends Fragment {
             public void onClick(View v) {
                 HomeFragment homeFragment = new HomeFragment();
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
-                transaction.replace(R.id.frameLayout, homeFragment);
+                transaction.replace(R.id.frameLayoutFragments, homeFragment);
                 transaction.commit();
             }
 
