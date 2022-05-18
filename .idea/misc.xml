@@ -9,7 +9,7 @@
         <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout-large/activity_login.xml" value="0.22" />
         <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout-large/activity_main.xml" value="0.18" />
         <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout-large/activity_restablecer_pwd.xml" value="0.18" />
-        <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout-large/fragment_ajustes.xml" value="0.33" />
+        <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout-large/fragment_ajustes.xml" value="0.25" />
         <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout-large/fragment_amigos.xml" value="0.25" />
         <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout-large/fragment_chat.xml" value="0.25" />
         <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout-large/fragment_home.xml" value="0.18" />
@@ -31,6 +31,7 @@
         <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout-xlarge/fragment_perfil.xml" value="0.18333333333333332" />
         <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout-xlarge/item_rv_chat_recientes.xml" value="0.5" />
         <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout-xlarge/item_rv_cuentos.xml" value="0.22" />
+        <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout-xlarge/itemviewpager.xml" value="0.18333333333333332" />
         <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout/activity_ajustes.xml" value="0.29010416666666666" />
         <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout/activity_amigos.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/DAVID/AndroidStudioProjects/APPCubeDavid/app/src/main/res/layout/activity_chat.xml" value="0.29010416666666666" />

@@ -1,10 +1,14 @@
 package com.example.appcubedavid;
 
 
+import static android.content.ContentValues.TAG;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -12,8 +16,6 @@ import android.widget.ImageView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -30,8 +32,38 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        ViewPager viewPager = findViewById(R.id.viewPagerInicio);
 
+
+        //comprobar si la app es abierta por primera vez
+        SharedPreferences preferences = getSharedPreferences("PREFERENCE", MODE_PRIVATE);
+        String FirstTime = preferences.getString("FirstTimeInstall","");
+
+        if(FirstTime.equals("Yes")){
+
+
+            //si ya hay una sesión iniciada se va directamente a home
+            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+            FirebaseAuth mAuth = FirebaseAuth.getInstance();
+            FirebaseUser user = mAuth.getCurrentUser();
+            if(user!=null){
+                irHome();//si no es la primera vez que se abre la app Y hay una sesión iniciada se va a la pantalla de home
+
+            }else{
+                irLogin();//si no es la primera vez que se abre la app Y no hay una sesión iniciada se va a la pantalla de login directamente
+            }
+
+
+        }else {//si es la primera vez que se abre la app se muestra la pantalla de introducción y se anota en preferences que la app ya se ha abierto por primera vez
+            SharedPreferences.Editor editor = preferences.edit();
+            editor.putString("FirstTimeInstall", "Yes");
+            editor.apply();
+        }
+
+
+
+
+
+        ViewPager viewPager = findViewById(R.id.viewPagerInicio);
         ImageView ivdot1 = findViewById(R.id.dot1);
         ImageView ivdot2 = findViewById(R.id.dot2);
         ImageView ivdot3 = findViewById(R.id.dot3);
@@ -41,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         b_empezar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                empezar();
+                irLogin();
             }
         });
 
@@ -77,23 +109,21 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        //si ya hay una sesión iniciada se va directamente a home
-        FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-        FirebaseAuth mAuth = FirebaseAuth.getInstance();
-        FirebaseUser user = mAuth.getCurrentUser();
-        if(user!=null){
-            Intent i = new Intent(this, HomeActivity.class);
-            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-            startActivity(i);
-        }
+
 
 
     }
 
 
 
-    public void empezar(){
+    public void irLogin(){
         Intent i = new Intent(this, LoginActivity.class);
+        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(i);
+    }
+
+    public void irHome(){
+        Intent i = new Intent(this, HomeActivity.class);
         i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(i);
     }

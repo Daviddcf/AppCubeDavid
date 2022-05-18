@@ -47,7 +47,7 @@ public class InscribirseActivity extends AppCompatActivity {
         registrarse_inscribirse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                irRegistrarse_inscribirse();
+                irLogin();
             }
         });
 
@@ -65,6 +65,7 @@ public class InscribirseActivity extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if(task.isSuccessful()){
                                     Toast.makeText(InscribirseActivity.this, "Usuario creado con exito", Toast.LENGTH_SHORT).show();
+                                    irLogin();
                                 }else{
                                     String errorCode = ((FirebaseAuthException)task.getException()).getErrorCode();
                                     Toast.makeText(InscribirseActivity.this, errorCode, Toast.LENGTH_SHORT).show();
@@ -83,8 +84,9 @@ public class InscribirseActivity extends AppCompatActivity {
 
     }
 
-    public void irRegistrarse_inscribirse(){
+    public void irLogin(){
         Intent i = new Intent(this, LoginActivity.class);
+        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(i);
     }
 }

@@ -156,19 +156,16 @@ public class LoginActivity extends AppCompatActivity {
                 .build();
 
         googleSignInClient = GoogleSignIn.getClient(this, googleSignInOptions);
-        /*
-        Intent intent = new Intent(LoginActivity.this,PerfilFragment.class);
-        intent.putExtra("Cliente", (Parcelable) googleSignInClient);
-        */
+
         firebaseAuth = FirebaseAuth.getInstance();
 
         btnGoogle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //SignIn();
+
                 Log.d(TAG, "onClick: begin Google SignIn");
                 Intent intent = googleSignInClient.getSignInIntent();
-                //startActivityForResult(intent, RC_SIGN_IN);
+
                 startForResult.launch(intent);
 
                 }
@@ -242,6 +239,7 @@ public class LoginActivity extends AppCompatActivity {
         i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(i);
     }
+
 
 
 

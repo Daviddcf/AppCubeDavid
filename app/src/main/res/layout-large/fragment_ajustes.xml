@@ -226,7 +226,7 @@
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
                         android:layout_weight="1"
-                        android:text="Cambiar la contraseña"
+                        android:text="Restablecer contraseña"
                         android:textAlignment="center"
                         android:textColor="#000000"
                         android:textSize="24sp" />

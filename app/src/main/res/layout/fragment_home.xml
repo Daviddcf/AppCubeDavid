@@ -89,6 +89,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
                         android:src="@drawable/gente3" />
 
                 </androidx.cardview.widget.CardView>
@@ -158,6 +159,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
                                 android:src="@drawable/gente3" />
                         </androidx.cardview.widget.CardView>
 
@@ -216,7 +218,8 @@
                             android:id="@+id/iv_fotoITEM"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            app:srcCompat="@drawable/gente1" />
+                            app:srcCompat="@drawable/gente1"
+                            android:scaleType="centerCrop" />
                     </androidx.cardview.widget.CardView>
 
                     <LinearLayout
@@ -331,6 +334,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
                                 android:src="@drawable/gente4" />
                         </androidx.cardview.widget.CardView>
 
@@ -390,6 +394,7 @@
                             android:id="@+id/iv_foto2"
                             android:layout_width="341dp"
                             android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/gente5" />
                     </androidx.cardview.widget.CardView>
 
