@@ -45,12 +45,9 @@ public class LoginActivity extends AppCompatActivity {
 
     private static final int RC_SIGN_IN = 100;
 
-    public GoogleSignInClient getGoogleSignInClient() {
-        return googleSignInClient;
-    }
 
-    public GoogleSignInOptions googleSignInOptions;
-    public GoogleSignInClient googleSignInClient;
+    private GoogleSignInOptions googleSignInOptions;
+    private GoogleSignInClient googleSignInClient;
     private static final String TAG = "GOOGLE_SIGN_IN_TAG";
 
     //Activity result launcher para Login con google

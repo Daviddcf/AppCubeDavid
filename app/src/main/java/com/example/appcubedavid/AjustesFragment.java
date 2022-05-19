@@ -19,6 +19,8 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
@@ -29,6 +31,9 @@ public class AjustesFragment extends Fragment {
 
     FirebaseAuth firebaseAuth;
     FirebaseUser firebaseUser;
+
+    private GoogleSignInOptions googleSignInOptions;
+    private GoogleSignInClient googleSignInClient;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -60,10 +65,24 @@ public class AjustesFragment extends Fragment {
         desconectar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 firebaseAuth.signOut();//cerrar sesión de firebase
+
+
+
+
+
+                googleSignInOptions=new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                        .requestIdToken("225955144223-tetp006hqbjsu59l91asn8ospnd57vmh.apps.googleusercontent.com")//(R.string.default_web_client_id)
+                        /*dentro de .requestIdToken() se debería de poner (R.string.default_web_client_id) el cual, en teoría se debería de generar automáticamente
+                         * en "strings.xml". En mi caso no lo hace (no he averiguado el motivo) y la solución provisional que he encontrado es copiar el "client_id"
+                         * de "google-services.json" directamente dentro de .requestIdToken()*/
+                        .requestEmail()
+                        .build();
+
+                GoogleSignInClient googleSignInClient=GoogleSignIn.getClient(getActivity(),googleSignInOptions);
+                googleSignInClient.signOut();
                 Toast.makeText(getContext(), "Sesión cerrada", Toast.LENGTH_SHORT).show();
-
-
 
                 irLogin();
             }
