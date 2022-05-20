@@ -36,26 +36,30 @@ public class MainActivity extends AppCompatActivity {
 
         //comprobar si la app es abierta por primera vez
         SharedPreferences preferences = getSharedPreferences("PREFERENCE", MODE_PRIVATE);
-        String FirstTime = preferences.getString("FirstTimeInstall","");
+        //String FirstTime = preferences.getString("FirstTimeInstall","");
+        boolean FirstTime = preferences.getBoolean("firststart", true);
 
-        if(FirstTime.equals("Yes")){
+        if(FirstTime==false){
 
 
             //si ya hay una sesión iniciada se va directamente a home
             FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
             FirebaseAuth mAuth = FirebaseAuth.getInstance();
             FirebaseUser user = mAuth.getCurrentUser();
-            if(user!=null){
-                irHome();//si no es la primera vez que se abre la app Y hay una sesión iniciada se va a la pantalla de home
+            if(user==null){
+                irLogin();//si no es la primera vez que se abre la app Y no hay una sesión iniciada se va a la pantalla de login directamente
+                Log.d(TAG, "onCreate: no hay un usuario => se va a login");
 
             }else{
-                irLogin();//si no es la primera vez que se abre la app Y no hay una sesión iniciada se va a la pantalla de login directamente
+                irHome();//si no es la primera vez que se abre la app Y hay una sesión iniciada se va a la pantalla de home
+                Log.d(TAG, "onCreate: hay un usuario => se va a home"+user.getEmail());
             }
 
 
         }else {//si es la primera vez que se abre la app se muestra la pantalla de introducción y se anota en preferences que la app ya se ha abierto por primera vez
             SharedPreferences.Editor editor = preferences.edit();
-            editor.putString("FirstTimeInstall", "Yes");
+            //editor.putString("FirstTimeInstall", "Yes");
+            editor.putBoolean("firststart", false);
             editor.apply();
         }
 
