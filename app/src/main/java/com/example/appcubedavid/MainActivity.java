@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 irLogin();//si no es la primera vez que se abre la app Y no hay una sesión iniciada se va a la pantalla de login directamente
                 Log.d(TAG, "onCreate: no hay un usuario => se va a login");
 
+
             }else{
                 irHome();//si no es la primera vez que se abre la app Y hay una sesión iniciada se va a la pantalla de home
                 Log.d(TAG, "onCreate: hay un usuario => se va a home"+user.getEmail());
