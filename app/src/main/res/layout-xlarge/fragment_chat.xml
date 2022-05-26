@@ -8,13 +8,14 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/PrimarioClaro">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <ImageButton
                 android:id="@+id/b_volver_chat"
@@ -34,7 +35,7 @@
                 android:layout_marginBottom="20dp"
                 android:fontFamily="sans-serif"
                 android:text="Mensajes"
-                android:textColor="#000000"
+                android:textColor="@color/Fuente1"
                 android:textSize="60sp"
                 android:textStyle="bold"
                 app:autoSizeTextType="none" />
@@ -51,6 +52,7 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center_vertical"
                 android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="@color/PrimarioOscuro"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="0dp">
 
@@ -58,7 +60,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
-                    android:background="#DADADA"
                     android:orientation="horizontal">
 
                     <EditText
@@ -75,16 +76,16 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_margin="10dp"
+                        app:cardBackgroundColor="@color/PrimarioOscuro"
                         app:cardCornerRadius="20dp"
                         app:cardElevation="0dp">
 
                         <ImageView
                             android:id="@+id/imageViewLupa"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_width="47dp"
+                            android:layout_height="46dp"
                             android:layout_gravity="center_vertical"
                             android:adjustViewBounds="true"
-                            android:background="#DADADA"
                             app:srcCompat="@android:drawable/ic_menu_search" />
 
                     </androidx.cardview.widget.CardView>
@@ -98,7 +99,8 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="@color/PrimarioClaro">
 
 
                     <LinearLayout
@@ -139,7 +141,7 @@
                                 android:layout_gravity="center_vertical"
                                 android:layout_weight="50"
                                 android:text="Eduardo Kelly"
-                                android:textColor="#000000"
+                                android:textColor="@color/Fuente1"
                                 android:textSize="24sp"
                                 android:textStyle="bold" />
 
@@ -149,6 +151,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="50"
                                 android:text="¿Qué tal cómo estás?"
+                                android:textColor="@color/Fuente2"
                                 android:textSize="24sp" />
                         </LinearLayout>
 
@@ -157,6 +160,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="10dp"
+                            app:cardBackgroundColor="@color/PrimarioClaro"
                             app:cardCornerRadius="30dp"
                             app:cardElevation="0dp">
 
@@ -167,6 +171,7 @@
                                 android:layout_height="wrap_content"
                                 android:backgroundTint="@color/orange"
                                 android:text="15:47"
+                                android:textColor="@color/Fuente2"
                                 android:textSize="24sp" />
                         </androidx.cardview.widget.CardView>
 
@@ -177,7 +182,8 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/PrimarioClaro">
 
 
                     <LinearLayout
@@ -218,7 +224,7 @@
                                 android:layout_gravity="center_vertical"
                                 android:layout_weight="50"
                                 android:text="Victor Exrixón"
-                                android:textColor="#000000"
+                                android:textColor="@color/Fuente1"
                                 android:textSize="24sp"
                                 android:textStyle="bold" />
 
@@ -228,6 +234,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="50"
                                 android:text="¿Qué tal cómo estás?"
+                                android:textColor="@color/Fuente2"
                                 android:textSize="24sp" />
                         </LinearLayout>
 
@@ -236,6 +243,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="10dp"
+                            app:cardBackgroundColor="@color/PrimarioClaro"
                             app:cardCornerRadius="30dp"
                             app:cardElevation="0dp">
 
@@ -246,6 +254,7 @@
                                 android:layout_height="wrap_content"
                                 android:backgroundTint="@color/orange"
                                 android:text="15:47"
+                                android:textColor="@color/Fuente2"
                                 android:textSize="24sp" />
                         </androidx.cardview.widget.CardView>
 
@@ -256,7 +265,8 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="@color/PrimarioClaro">
 
 
                     <LinearLayout
@@ -297,7 +307,7 @@
                                 android:layout_gravity="center_vertical"
                                 android:layout_weight="50"
                                 android:text="surfiya zakir"
-                                android:textColor="#000000"
+                                android:textColor="@color/Fuente1"
                                 android:textSize="24sp"
                                 android:textStyle="bold" />
 
@@ -307,6 +317,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="50"
                                 android:text="¿Qué tal cómo estás?"
+                                android:textColor="@color/Fuente2"
                                 android:textSize="24sp" />
                         </LinearLayout>
 
@@ -315,6 +326,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="10dp"
+                            app:cardBackgroundColor="@color/PrimarioClaro"
                             app:cardCornerRadius="30dp"
                             app:cardElevation="0dp">
 
@@ -325,6 +337,7 @@
                                 android:layout_height="wrap_content"
                                 android:backgroundTint="@color/orange"
                                 android:text="15:47"
+                                android:textColor="@color/Fuente2"
                                 android:textSize="24sp" />
                         </androidx.cardview.widget.CardView>
 

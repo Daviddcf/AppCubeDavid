@@ -10,6 +10,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/PrimarioClaro"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView_Amigos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +26,7 @@
                 android:id="@+id/b_volver_amigos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#FFFFFF"
+                android:backgroundTint="@color/PrimarioClaro"
                 app:srcCompat="?attr/homeAsUpIndicator" />
 
             <TextView
@@ -36,7 +37,7 @@
                 android:layout_marginBottom="20dp"
                 android:fontFamily="sans-serif"
                 android:text="Amigos"
-                android:textColor="#000000"
+                android:textColor="@color/Fuente1"
                 android:textSize="26sp"
                 android:textStyle="bold"
                 app:autoSizeTextType="none" />
@@ -46,6 +47,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginBottom="20dp"
+                android:background="@color/PrimarioOscuro"
+                app:cardBackgroundColor="@color/PrimarioOscuro"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="0dp">
 
@@ -53,7 +56,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
-                    android:background="#DADADA"
                     android:orientation="horizontal">
 
                     <EditText
@@ -64,12 +66,14 @@
                         android:layout_weight="3"
                         android:ems="10"
                         android:hint="Buscar..."
-                        android:inputType="textPersonName" />
+                        android:inputType="textPersonName"
+                        android:textColor="@color/Fuente2" />
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_margin="10dp"
+                        app:cardBackgroundColor="@color/PrimarioOscuro"
                         app:cardCornerRadius="20dp"
                         app:cardElevation="0dp">
 
@@ -79,7 +83,6 @@
                             android:layout_height="match_parent"
                             android:layout_gravity="center_vertical"
                             android:adjustViewBounds="true"
-                            android:background="#DADADA"
                             app:srcCompat="@android:drawable/ic_menu_search" />
 
                     </androidx.cardview.widget.CardView>
@@ -93,7 +96,8 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="@color/PrimarioClaro">
 
 
                     <LinearLayout
@@ -115,6 +119,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
                                 android:src="@drawable/gente3" />
 
                         </androidx.cardview.widget.CardView>
@@ -133,7 +138,7 @@
                                 android:layout_gravity="center_vertical"
                                 android:layout_weight="50"
                                 android:text="Eduardo Kelly"
-                                android:textColor="#000000"
+                                android:textColor="@color/Fuente1"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -141,7 +146,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="50"
-                                android:text="¿Qué tal cómo estás?" />
+                                android:text="¿Qué tal cómo estás?"
+                                android:textColor="@color/Fuente2" />
                         </LinearLayout>
 
                         <androidx.cardview.widget.CardView
@@ -149,6 +155,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="10dp"
+                            app:cardBackgroundColor="@color/PrimarioClaro"
                             app:cardCornerRadius="30dp"
                             app:cardElevation="0dp">
 
@@ -168,7 +175,8 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/PrimarioClaro">
 
 
                     <LinearLayout
@@ -190,6 +198,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
                                 android:src="@drawable/gente1" />
 
                         </androidx.cardview.widget.CardView>
@@ -208,7 +217,7 @@
                                 android:layout_gravity="center_vertical"
                                 android:layout_weight="50"
                                 android:text="Victor Exrixón"
-                                android:textColor="#000000"
+                                android:textColor="@color/Fuente1"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -216,7 +225,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="50"
-                                android:text="¿Qué tal cómo estás?" />
+                                android:text="¿Qué tal cómo estás?"
+                                android:textColor="@color/Fuente2" />
                         </LinearLayout>
 
                         <androidx.cardview.widget.CardView
@@ -224,6 +234,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="10dp"
+                            app:cardBackgroundColor="@color/PrimarioClaro"
                             app:cardCornerRadius="30dp"
                             app:cardElevation="0dp">
 
@@ -243,7 +254,8 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="@color/PrimarioClaro">
 
 
                     <LinearLayout
@@ -265,6 +277,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
                                 android:src="@drawable/gente2" />
 
                         </androidx.cardview.widget.CardView>
@@ -283,7 +296,7 @@
                                 android:layout_gravity="center_vertical"
                                 android:layout_weight="50"
                                 android:text="surfiya zakir"
-                                android:textColor="#000000"
+                                android:textColor="@color/Fuente1"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -291,7 +304,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="50"
-                                android:text="¿Qué tal cómo estás?" />
+                                android:text="¿Qué tal cómo estás?"
+                                android:textColor="@color/Fuente2" />
                         </LinearLayout>
 
                         <androidx.cardview.widget.CardView
@@ -299,6 +313,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="10dp"
+                            app:cardBackgroundColor="@color/PrimarioClaro"
                             app:cardCornerRadius="30dp"
                             app:cardElevation="0dp">
 

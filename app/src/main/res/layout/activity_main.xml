@@ -8,6 +8,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/PrimarioClaro"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,7 +40,7 @@
                 android:fontFamily="sans-serif"
                 android:text="Descubre una nueva historia que te encantará"
                 android:textAlignment="center"
-                android:textColor="#000000"
+                android:textColor="@color/Fuente1"
                 android:textSize="26sp"
                 android:textStyle="bold"
                 app:autoSizeTextType="none" />
@@ -55,7 +56,7 @@
                 android:lineSpacingExtra="8sp"
                 android:text="Implementación de tecnologías para almacenar datos inalterables en base a datos específicos"
                 android:textAlignment="center"
-                android:textColor="#BDBDBD"
+                android:textColor="@color/Fuente3"
                 android:textSize="16sp" />
 
             <LinearLayout

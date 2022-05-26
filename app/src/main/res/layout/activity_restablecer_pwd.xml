@@ -9,6 +9,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/PrimarioClaro"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,7 +41,7 @@
                     android:layout_marginBottom="20dp"
                     android:fontFamily="sans-serif"
                     android:text="Restablecer la contraseña"
-                    android:textColor="#000000"
+                    android:textColor="@color/Fuente1"
                     android:textSize="26sp"
                     android:textStyle="bold"
                     app:autoSizeTextType="none" />
@@ -53,7 +54,7 @@
                     android:layout_marginBottom="20dp"
                     android:lineSpacingExtra="8sp"
                     android:text="Ingrese su dirección de correo electrónico en este campo para recuperar su contraseña"
-                    android:textColor="#BDBDBD"
+                    android:textColor="@color/Fuente3"
                     android:textSize="16sp" />
 
                 <TextView
@@ -62,6 +63,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
                     android:text="Nombre de usuario"
+                    android:textColor="@color/Fuente2"
                     android:textSize="16sp" />
 
                 <EditText
@@ -69,7 +71,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@color/Fuente2" />
 
                 <Button
                     android:id="@+id/b_registrarse_resetpwd"
@@ -92,7 +95,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginRight="5dp"
-                        android:text="¿Ya tienes cuenta?" />
+                        android:text="¿Ya tienes cuenta?"
+                        android:textColor="@color/Fuente2" />
 
                     <TextView
                         android:id="@+id/tv_registrarse_resetpwd"

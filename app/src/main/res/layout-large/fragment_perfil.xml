@@ -13,7 +13,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#E8E8E8"
+            android:background="@color/PrimarioOscuro"
             android:orientation="vertical">
 
             <ImageView
@@ -76,7 +76,7 @@
                     android:layout_height="120dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    app:cardBackgroundColor="#FFFFFF"
+                    app:cardBackgroundColor="@color/PrimarioClaro"
                     app:cardCornerRadius="100dp"
                     app:cardElevation="0dp">
 
@@ -106,7 +106,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:text="Alicia Maghyn"
-                    android:textColor="#000000"
+                    android:textColor="@color/Fuente1"
                     android:textSize="24sp"
                     android:textStyle="bold" />
 
@@ -118,6 +118,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_weight="50"
                     android:text="\@California"
+                    android:textColor="@color/Fuente2"
                     android:textSize="24sp" />
 
             </LinearLayout>
@@ -130,6 +131,7 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
                 android:translationY="-350dp"
+                app:cardBackgroundColor="@color/PrimarioClaro"
                 app:cardCornerRadius="20dp">
 
                 <LinearLayout
@@ -153,6 +155,7 @@
                             android:layout_gravity="center"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
+                            app:cardBackgroundColor="@color/PrimarioClaro"
                             app:cardCornerRadius="30dp"
                             app:cardElevation="0dp">
 
@@ -173,6 +176,7 @@
                             android:layout_gravity="center"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
+                            app:cardBackgroundColor="@color/PrimarioClaro"
                             app:cardCornerRadius="30dp"
                             app:cardElevation="0dp">
 
@@ -192,6 +196,7 @@
                             android:layout_gravity="center"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
+                            app:cardBackgroundColor="@color/PrimarioClaro"
                             app:cardCornerRadius="40dp"
                             app:cardElevation="0dp">
 
@@ -221,6 +226,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     android:padding="10dp"
+                    app:cardBackgroundColor="@color/PrimarioClaro"
                     app:cardCornerRadius="20dp">
 
                     <TableLayout
@@ -293,7 +299,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="76"
                                 android:textAlignment="center"
-                                android:textColor="#000000"
+                                android:textColor="@color/Fuente1"
                                 android:textSize="48sp"
                                 android:textStyle="bold" />
 
@@ -303,7 +309,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="22"
                                 android:textAlignment="center"
-                                android:textColor="#000000"
+                                android:textColor="@color/Fuente1"
                                 android:textSize="48sp"
                                 android:textStyle="bold" />
 
@@ -313,7 +319,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="166"
                                 android:textAlignment="center"
-                                android:textColor="#000000"
+                                android:textColor="@color/Fuente1"
                                 android:textSize="48sp"
                                 android:textStyle="bold" />
 
@@ -323,7 +329,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="1.2k"
                                 android:textAlignment="center"
-                                android:textColor="#000000"
+                                android:textColor="@color/Fuente1"
                                 android:textSize="48sp"
                                 android:textStyle="bold" />
                         </TableRow>
@@ -340,6 +346,7 @@
                                 android:layout_marginLeft="2dp"
                                 android:layout_marginRight="2dp"
                                 android:text="PUBLICACIONES"
+                                android:textColor="@color/Fuente2"
                                 android:textSize="24sp" />
 
                             <TextView
@@ -349,6 +356,7 @@
                                 android:layout_marginLeft="2dp"
                                 android:layout_marginRight="2dp"
                                 android:text="SEGUIDORES"
+                                android:textColor="@color/Fuente2"
                                 android:textSize="24sp" />
 
                             <TextView
@@ -358,6 +366,7 @@
                                 android:layout_marginLeft="2dp"
                                 android:layout_marginRight="2dp"
                                 android:text="COMENTARIOS"
+                                android:textColor="@color/Fuente2"
                                 android:textSize="24sp" />
 
                             <TextView
@@ -367,6 +376,7 @@
                                 android:layout_marginLeft="2dp"
                                 android:layout_marginRight="2dp"
                                 android:text="GUSTOS"
+                                android:textColor="@color/Fuente2"
                                 android:textSize="24sp" />
                         </TableRow>
 
@@ -379,7 +389,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:text="Sobre mí"
-                    android:textColor="#000000"
+                    android:textColor="@color/Fuente1"
                     android:textSize="24sp"
                     android:textStyle="bold" />
 
@@ -389,6 +399,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:text="Implementación de tecnologías para almacenar datos modificables basados en específicos de tecnologías para almacenar datos basados en específicos para almacenar datos basados en datos basados en específicos de específicos"
+                    android:textColor="@color/Fuente2"
                     android:textSize="20sp" />
 
                 <TextView
@@ -397,7 +408,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:text="Fotos"
-                    android:textColor="#000000"
+                    android:textColor="@color/Fuente1"
                     android:textSize="24sp"
                     android:textStyle="bold" />
 
@@ -604,7 +615,7 @@
                                     android:layout_gravity="center_vertical"
                                     android:layout_weight="50"
                                     android:text="Eduardo Kelly"
-                                    android:textColor="#000000"
+                                    android:textColor="@color/Fuente1"
                                     android:textSize="24sp"
                                     android:textStyle="bold" />
 
@@ -614,6 +625,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="50"
                                     android:text="Hace 2 horas"
+                                    android:textColor="@color/Fuente2"
                                     android:textSize="24sp" />
                             </LinearLayout>
 
@@ -635,6 +647,7 @@
                             android:layout_gravity="center"
                             android:layout_marginBottom="20dp"
                             android:text="Implementación de tecnologías para almacenar datos inalterables en base a datos específicos"
+                            android:textColor="@color/Fuente2"
                             android:textSize="20sp" />
 
                         <androidx.cardview.widget.CardView
@@ -676,6 +689,7 @@
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
                                     android:text="1124"
+                                    android:textColor="@color/Fuente2"
                                     android:textSize="20sp" />
 
                             </LinearLayout>
@@ -701,6 +715,7 @@
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
                                     android:text="77"
+                                    android:textColor="@color/Fuente2"
                                     android:textSize="20sp" />
 
                             </LinearLayout>
@@ -725,6 +740,7 @@
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
                                     android:text="56"
+                                    android:textColor="@color/Fuente2"
                                     android:textSize="20sp" />
                             </LinearLayout>
 

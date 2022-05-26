@@ -11,7 +11,7 @@
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#E8E8E8"
+        android:background="@color/PrimarioOscuro"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -36,6 +36,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
+                    app:cardBackgroundColor="@color/PrimarioClaro"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="0dp">
 
@@ -43,7 +44,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="3"
-                        android:background="#DADADA"
                         android:orientation="horizontal">
 
                         <EditText
@@ -55,12 +55,14 @@
                             android:ems="10"
                             android:hint="Buscar..."
                             android:inputType="textPersonName"
+                            android:textColor="@color/Fuente2"
                             android:textSize="24sp" />
 
                         <androidx.cardview.widget.CardView
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:layout_margin="10dp"
+                            app:cardBackgroundColor="@color/PrimarioClaro"
                             app:cardCornerRadius="20dp"
                             app:cardElevation="0dp">
 
@@ -70,7 +72,6 @@
                                 android:layout_height="match_parent"
                                 android:layout_gravity="center_vertical"
                                 android:adjustViewBounds="true"
-                                android:background="#DADADA"
                                 app:srcCompat="@android:drawable/ic_menu_search" />
 
                         </androidx.cardview.widget.CardView>
@@ -111,7 +112,7 @@
                     android:layout_weight="1"
                     android:fontFamily="sans-serif"
                     android:text="Cuentos"
-                    android:textColor="#000000"
+                    android:textColor="@color/Fuente1"
                     android:textSize="60sp"
                     android:textStyle="bold"
                     app:autoSizeTextType="none" />
@@ -136,6 +137,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="@color/PrimarioClaro"
                 app:cardCornerRadius="20dp">
 
                 <LinearLayout
@@ -182,7 +184,7 @@
                                 android:layout_gravity="center_vertical"
                                 android:layout_weight="50"
                                 android:text="Eduardo Kelly"
-                                android:textColor="#000000"
+                                android:textColor="@color/Fuente1"
                                 android:textSize="24sp"
                                 android:textStyle="bold" />
 
@@ -192,6 +194,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="50"
                                 android:text="Hace 2 horas"
+                                android:textColor="@color/Fuente2"
                                 android:textSize="24sp" />
                         </LinearLayout>
 
@@ -213,6 +216,7 @@
                         android:layout_gravity="center"
                         android:layout_marginBottom="20dp"
                         android:text="Implementación de tecnologías para almacenar datos inalterables en base a datos específicos"
+                        android:textColor="@color/Fuente2"
                         android:textSize="24sp" />
 
                     <androidx.cardview.widget.CardView
@@ -254,6 +258,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:text="1124"
+                                android:textColor="@color/Fuente2"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -279,6 +284,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:text="77"
+                                android:textColor="@color/Fuente2"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -303,6 +309,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:text="56"
+                                android:textColor="@color/Fuente2"
                                 android:textSize="20sp" />
                         </LinearLayout>
 
@@ -316,6 +323,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="@color/PrimarioClaro"
                 app:cardCornerRadius="20dp">
 
                 <LinearLayout
@@ -362,7 +370,7 @@
                                 android:layout_gravity="center_vertical"
                                 android:layout_weight="50"
                                 android:text="Eduardo Kelly"
-                                android:textColor="#000000"
+                                android:textColor="@color/Fuente1"
                                 android:textSize="24sp"
                                 android:textStyle="bold" />
 
@@ -372,6 +380,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="50"
                                 android:text="Hace 2 horas"
+                                android:textColor="@color/Fuente2"
                                 android:textSize="24sp" />
                         </LinearLayout>
 
@@ -393,6 +402,7 @@
                         android:layout_gravity="center"
                         android:layout_marginBottom="20dp"
                         android:text="Implementación de tecnologías para almacenar datos inalterables en base a datos específicos"
+                        android:textColor="@color/Fuente2"
                         android:textSize="24sp" />
 
                     <androidx.cardview.widget.CardView
@@ -434,6 +444,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:text="1124"
+                                android:textColor="@color/Fuente2"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -459,6 +470,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:text="77"
+                                android:textColor="@color/Fuente2"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -483,6 +495,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:text="56"
+                                android:textColor="@color/Fuente2"
                                 android:textSize="20sp" />
                         </LinearLayout>
 

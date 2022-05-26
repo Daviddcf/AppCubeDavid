@@ -4,7 +4,10 @@ package com.example.appcubedavid;
 import static android.content.ContentValues.TAG;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.viewpager.widget.ViewPager;
+
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -13,6 +16,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Switch;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -23,6 +27,11 @@ public class MainActivity extends AppCompatActivity {
 
     int imagenes[]={R.drawable.slider1, R.drawable.slider2, R.drawable.slider3};
 
+    //comprobar si la app es abierta por primera vez
+
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,12 +41,17 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
+        SharedPreferences preferences = getSharedPreferences("PREFERENCE", MODE_PRIVATE);
 
         //comprobar si la app es abierta por primera vez
-        SharedPreferences preferences = getSharedPreferences("PREFERENCE", MODE_PRIVATE);
-        //String FirstTime = preferences.getString("FirstTimeInstall","");
         boolean FirstTime = preferences.getBoolean("firststart", true);
+        boolean DarkMode = preferences.getBoolean("darkmode", false);
+
+        if(DarkMode == true){
+            ActivarModoscuro(this);
+        }else{
+            DesactivarModoscuro(this);
+        }
 
         if(FirstTime==false){
 
@@ -46,14 +60,16 @@ public class MainActivity extends AppCompatActivity {
             FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
             FirebaseAuth mAuth = FirebaseAuth.getInstance();
             FirebaseUser user = mAuth.getCurrentUser();
-            if(user==null){
-                irLogin();//si no es la primera vez que se abre la app Y no hay una sesión iniciada se va a la pantalla de login directamente
-                Log.d(TAG, "onCreate: no hay un usuario => se va a login");
+            if(user!=null){
+
+
+                irHome();//si no es la primera vez que se abre la app Y hay una sesión iniciada se va a la pantalla de home
+                Log.d(TAG, "MainActivity-onCreate: hay un usuario => se va a home"+user.getEmail());
 
 
             }else{
-                irHome();//si no es la primera vez que se abre la app Y hay una sesión iniciada se va a la pantalla de home
-                Log.d(TAG, "onCreate: hay un usuario => se va a home"+user.getEmail());
+                irLogin();//si no es la primera vez que se abre la app Y no hay una sesión iniciada se va a la pantalla de login directamente
+                Log.d(TAG, "MainActivity-onCreate: no hay un usuario => se va a login");
             }
 
 
@@ -119,7 +135,23 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void ActivarModoscuro(Context context){
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+        SharedPreferences preferences = context.getSharedPreferences("PREFERENCE", context.MODE_PRIVATE);
 
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putBoolean("darkmode", true);
+        editor.apply();
+    }
+
+    public void DesactivarModoscuro(Context context){
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        SharedPreferences preferences = context.getSharedPreferences("PREFERENCE", context.MODE_PRIVATE);
+
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putBoolean("darkmode", false);
+        editor.apply();
+    }
 
     public void irLogin(){
         Intent i = new Intent(this, LoginActivity.class);

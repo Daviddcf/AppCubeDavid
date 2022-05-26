@@ -11,9 +11,10 @@
     <color name="grey">#4d4d4d</color>
     <color name="blue">#202ffa</color>
 
-    <color name="PrimarioClaro">#FFFFFF</color>
-    <color name="PrimarioOscuro">#E8E8E8</color>
-    <color name="Fuente1">#000000</color>
+    <color name="PrimarioClaro">#333333</color>
+    <color name="PrimarioOscuro">#222222</color>
+    <color name="Fuente1">#FFFFFF</color>
     <color name="Fuente2">#757575</color>
     <color name="Fuente3">#BDBDBD</color>
+
 </resources>

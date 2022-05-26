@@ -8,13 +8,15 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/PrimarioClaro">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            android:paddingBottom="50dp">
 
             <ImageButton
                 android:id="@+id/b_volver_ajustes"
@@ -32,7 +34,7 @@
                 android:layout_marginBottom="20dp"
                 android:fontFamily="sans-serif"
                 android:text="Ajustes"
-                android:textColor="#000000"
+                android:textColor="@color/Fuente1"
                 android:textSize="26sp"
                 android:textStyle="bold"
                 app:autoSizeTextType="none" />
@@ -40,7 +42,8 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@color/PrimarioClaro">
 
 
                 <LinearLayout
@@ -54,7 +57,7 @@
                         android:layout_height="30dp"
                         android:layout_margin="10dp"
                         android:backgroundTint="#E32C2C"
-                        app:cardCornerRadius="10dp" >
+                        app:cardCornerRadius="10dp">
 
                         <ImageView
                             android:id="@+id/imageView7"
@@ -73,7 +76,7 @@
                         android:layout_weight="1"
                         android:text="Notificación de inserción"
                         android:textAlignment="center"
-                        android:textColor="#000000" />
+                        android:textColor="@color/Fuente1" />
 
                     <ImageButton
                         android:id="@+id/imageButton3"
@@ -90,7 +93,8 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@color/PrimarioClaro">
 
 
                 <LinearLayout
@@ -104,7 +108,7 @@
                         android:layout_height="30dp"
                         android:layout_margin="10dp"
                         android:backgroundTint="#E32C2C"
-                        app:cardCornerRadius="10dp" >
+                        app:cardCornerRadius="10dp">
 
                         <ImageView
                             android:id="@+id/imageView8"
@@ -123,7 +127,7 @@
                         android:layout_weight="1"
                         android:text="Cuentas Vinculadas"
                         android:textAlignment="center"
-                        android:textColor="#000000" />
+                        android:textColor="@color/Fuente1" />
 
                     <ImageButton
                         android:id="@+id/ib_cuentasVinculadas"
@@ -140,7 +144,8 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@color/PrimarioClaro">
 
 
                 <LinearLayout
@@ -154,7 +159,7 @@
                         android:layout_height="30dp"
                         android:layout_margin="10dp"
                         android:backgroundTint="#E32C2C"
-                        app:cardCornerRadius="10dp" >
+                        app:cardCornerRadius="10dp">
 
                         <ImageView
                             android:id="@+id/imageView9"
@@ -173,7 +178,7 @@
                         android:layout_weight="1"
                         android:text="Bloquear cuentas"
                         android:textAlignment="center"
-                        android:textColor="#000000" />
+                        android:textColor="@color/Fuente1" />
 
                     <ImageButton
                         android:id="@+id/ib_bloquearCuentas"
@@ -190,7 +195,8 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@color/PrimarioClaro">
 
 
                 <LinearLayout
@@ -204,7 +210,7 @@
                         android:layout_height="30dp"
                         android:layout_margin="10dp"
                         android:backgroundTint="#E32C2C"
-                        app:cardCornerRadius="10dp" >
+                        app:cardCornerRadius="10dp">
 
                         <ImageView
                             android:id="@+id/imageView10"
@@ -223,7 +229,7 @@
                         android:layout_weight="1"
                         android:text="Restablecer contraseña"
                         android:textAlignment="center"
-                        android:textColor="#000000" />
+                        android:textColor="@color/Fuente1" />
 
                     <ImageButton
                         android:id="@+id/ib_cambiarContraseña"
@@ -240,7 +246,8 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@color/PrimarioClaro">
 
 
                 <LinearLayout
@@ -254,7 +261,7 @@
                         android:layout_height="30dp"
                         android:layout_margin="10dp"
                         android:backgroundTint="#E32C2C"
-                        app:cardCornerRadius="10dp" >
+                        app:cardCornerRadius="10dp">
 
                         <ImageView
                             android:id="@+id/imageView11"
@@ -273,7 +280,7 @@
                         android:layout_weight="1"
                         android:text="La configuración de privacidad"
                         android:textAlignment="center"
-                        android:textColor="#000000" />
+                        android:textColor="@color/Fuente1" />
 
                     <ImageButton
                         android:id="@+id/ib_configPriv"
@@ -290,7 +297,8 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@color/PrimarioClaro">
 
 
                 <LinearLayout
@@ -304,7 +312,7 @@
                         android:layout_height="30dp"
                         android:layout_margin="10dp"
                         android:backgroundTint="#E32C2C"
-                        app:cardCornerRadius="10dp" >
+                        app:cardCornerRadius="10dp">
 
                         <ImageView
                             android:id="@+id/imageView12"
@@ -323,7 +331,7 @@
                         android:layout_weight="1"
                         android:text="Idioma"
                         android:textAlignment="center"
-                        android:textColor="#000000" />
+                        android:textColor="@color/Fuente1" />
 
                     <ImageButton
                         android:id="@+id/ib_idioma"
@@ -340,7 +348,8 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@color/PrimarioClaro">
 
 
                 <LinearLayout
@@ -373,7 +382,7 @@
                         android:layout_weight="1"
                         android:text="Desconectar"
                         android:textAlignment="center"
-                        android:textColor="#000000" />
+                        android:textColor="@color/Fuente1" />
 
                     <ImageButton
                         android:id="@+id/ib_desconectar"
@@ -390,7 +399,8 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@color/PrimarioClaro">
 
 
                 <LinearLayout
@@ -423,7 +433,7 @@
                         android:layout_weight="1"
                         android:text="Eliminar mi cuenta"
                         android:textAlignment="center"
-                        android:textColor="#000000" />
+                        android:textColor="@color/Fuente1" />
 
                     <ImageButton
                         android:id="@+id/ib_eliminarCuentas"
@@ -447,12 +457,13 @@
                 android:layout_marginTop="20dp"
                 android:layout_weight="50"
                 android:text="Modo Oscuro"
-                android:textColor="#000000"
+                android:textColor="@color/Fuente1"
                 android:textStyle="bold" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/PrimarioClaro">
 
 
                 <LinearLayout
@@ -469,10 +480,10 @@
                         android:layout_weight="1"
                         android:text="Habilitar modo oscuro"
                         android:textAlignment="textStart"
-                        android:textColor="#000000" />
+                        android:textColor="@color/Fuente1" />
 
                     <Switch
-                        android:id="@+id/switch1"
+                        android:id="@+id/switch_modoscuro"
                         android:layout_width="wrap_content"
                         android:layout_height="50dp"
                         android:layout_weight="1"
