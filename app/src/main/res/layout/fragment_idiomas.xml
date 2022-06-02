@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".IdiomasFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/PrimarioClaro">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:paddingBottom="50dp">
+
+            <ImageButton
+                android:id="@+id/b_volver_idiomas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="?attr/homeAsUpIndicator" />
+
+            <TextView
+                android:id="@+id/tv_mensajes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="sans-serif"
+                android:text="Ajustes"
+                android:textColor="@color/Fuente1"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:autoSizeTextType="none" />
+
+
+            <TextView
+                android:id="@+id/tv_seleccioneIdioma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="50"
+                android:textColor="@color/Fuente1"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/sp_idiomas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/arrayIdiomas" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/PrimarioClaro"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="0dp">
+
+
+                <Button
+                    android:id="@+id/b_cambiarIdioma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/orange"
+                    android:text="Actualizar Idioma" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

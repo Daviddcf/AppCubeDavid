@@ -11,13 +11,27 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
+
+    <string name="Inscribirse">Inscribirse</string>
+    <string name="TextoInscribirse">Ingrese su dirección de correo electrónico y contraseña para crear una cuenta</string>
+    <string name="NombreUsuario">Nombre de usuario</string>
+    <string name="Contraseña">Contraseña</string>
+    <string name="ContraseñaOlvidada">¿Se te olvido tu contraseña?</string>
+    <string name="IniciarSesion">Iniciar sesión</string>
+    <string name="SinCuenta">¿No tienes cuenta?</string>
+    <string name="LoginGoogle">Conéctate con Google</string>
+    <string name="LoginFacebook">Conéctate con Facebook</string>
+    <string name="TienesCuenta">¿Ya tienes cuenta?</string>
+    <string name="Registrarse">Registrarse</string>
+    <string name="ResetPWD">Restablecer la contraseña</string>
+    <string name="TextoResetPWD">Ingrese su dirección de correo electrónico en este campo para recuperar su contraseña</string>
     <string name="Cuentos">Cuentos</string>
-    <string name="Buscar">Buscar</string>
+    <string name="Buscar">Buscar...</string>
     <string name="Ver_todo">Ver todo</string>
     <string name="HaceXhoras">Hace 2 horas</string>
     <string name="TextoEjemplo">Implementación de tecnologías para almacenar datos inalterables en base a datos específicos</string>
     <string name="Amigos">Amigos</string>
-    <string name="Saludo">¿Qué tal cómo estas?</string>
+    <string name="Saludo">¿Qué tal cómo estás?</string>
     <string name="Seguir">Seguir</string>
     <string name="Perfil">Perfil</string>
     <string name="Publicaciones">Publicaciones</string>
@@ -32,7 +46,21 @@
     <string name="Empezar">Empezar</string>
     <string name="invalid_mail">Ingrese un correo válido</string>
     <string name="invalid_password">Ingrese una contraseña con al menos 6 digitos</string>
-
+    <string name="seleccionarIdioma">Seleccione un idioma:</string>
+    <string name="opcion1">Notificación de inserción</string>
+    <string name="opcion2">Cuentas Vinculadas</string>
+    <string name="opcion3">Bloquear cuentas</string>
+    <string name="opcion4">Restablecer contraseña</string>
+    <string name="opcion5">Configuración de privacidad</string>
+    <string name="opcion6">Idioma</string>
+    <string name="opcion7">Desconectar</string>
+    <string name="opcion8">Elimina mi cuenta</string>
+    <string name="modoscuro">Modo oscuro</string>
+    <string name="habmodoscuro">Habilitar modo oscuro</string>
+    <string-array name="arrayIdiomas">
+        <item>English</item>
+        <item>Español</item>
+    </string-array>
 
 
 </resources>

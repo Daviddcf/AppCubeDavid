@@ -14,8 +14,21 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
+    <string name="Inscribirse">Create account</string>
+    <string name="TextoInscribirse">Enter your email addres and password to create an account</string>
+    <string name="NombreUsuario">Username</string>
+    <string name="Contraseña">Password</string>
+    <string name="ContraseñaOlvidada">Forgot your password?</string>
+    <string name="IniciarSesion">Log in</string>
+    <string name="SinCuenta">Dont have an account?</string>
+    <string name="LoginGoogle">Log in with Google</string>
+    <string name="LoginFacebook">Log in with Facebook</string>
+    <string name="TienesCuenta">Already have an account?</string>
+    <string name="Registrarse">Register</string>
+    <string name="ResetPWD">Reset your password</string>
+    <string name="TextoResetPWD">Enter your email addres to reset your password</string>
     <string name="Cuentos">Stories</string>
-    <string name="Buscar">Search</string>
+    <string name="Buscar">Search...</string>
     <string name="Ver_todo">See all</string>
     <string name="HaceXhoras">2 hours ago</string>
     <string name="TextoEjemplo">Implementation of technologies to store unalterable data based on specific data</string>
@@ -35,5 +48,20 @@
     <string name="Empezar">Start</string>
     <string name="invalid_mail">Write a valid address</string>
     <string name="invalid_password">Password must contain at least 6 digits</string>
+    <string name="seleccionarIdioma">Select a language:</string>
+    <string name="opcion1">Insertion notifications</string>
+    <string name="opcion2">Linked accounts</string>
+    <string name="opcion3">Blocked accounts</string>
+    <string name="opcion4">Reset password</string>
+    <string name="opcion5">Privacy config</string>
+    <string name="opcion6">Language</string>
+    <string name="opcion7">Sign out</string>
+    <string name="opcion8">Delete my account</string>
+    <string name="modoscuro">Darkmode</string>
+    <string name="habmodoscuro">Turn on darkmode</string>
+    <string-array name="arrayIdiomas">
+        <item>English</item>
+        <item>Español</item>
+    </string-array>
 
 </resources>

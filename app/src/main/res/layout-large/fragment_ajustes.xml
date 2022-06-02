@@ -34,7 +34,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
                 android:fontFamily="sans-serif"
-                android:text="Ajustes"
+                android:text="@string/Ajustes"
                 android:textColor="@color/Fuente1"
                 android:textSize="60sp"
                 android:textStyle="bold"
@@ -74,7 +74,7 @@
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
                         android:layout_weight="1"
-                        android:text="Notificación de inserción"
+                        android:text="@string/opcion1"
                         android:textAlignment="center"
                         android:textColor="@color/Fuente1"
                         android:textSize="24sp" />
@@ -125,7 +125,7 @@
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
                         android:layout_weight="1"
-                        android:text="Cuentas Vinculadas"
+                        android:text="@string/opcion2"
                         android:textAlignment="center"
                         android:textColor="@color/Fuente1"
                         android:textSize="24sp" />
@@ -176,7 +176,7 @@
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
                         android:layout_weight="1"
-                        android:text="Bloquear cuentas"
+                        android:text="@string/opcion3"
                         android:textAlignment="center"
                         android:textColor="@color/Fuente1"
                         android:textSize="24sp" />
@@ -195,6 +195,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cd_restablecerPwd"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -227,7 +228,7 @@
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
                         android:layout_weight="1"
-                        android:text="Restablecer contraseña"
+                        android:text="@string/opcion4"
                         android:textAlignment="center"
                         android:textColor="@color/Fuente1"
                         android:textSize="24sp" />
@@ -278,7 +279,7 @@
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
                         android:layout_weight="1"
-                        android:text="La configuración de privacidad"
+                        android:text="@string/opcion5"
                         android:textAlignment="center"
                         android:textColor="@color/Fuente1"
                         android:textSize="24sp" />
@@ -297,6 +298,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cd_cambiarIdioma"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -329,7 +331,7 @@
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
                         android:layout_weight="1"
-                        android:text="Idioma"
+                        android:text="@string/opcion6"
                         android:textAlignment="center"
                         android:textColor="@color/Fuente1"
                         android:textSize="24sp" />
@@ -348,6 +350,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cd_desconectar"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -380,7 +383,7 @@
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
                         android:layout_weight="1"
-                        android:text="Desconectar"
+                        android:text="@string/opcion7"
                         android:textAlignment="center"
                         android:textColor="@color/Fuente1"
                         android:textSize="24sp" />
@@ -398,6 +401,57 @@
 
             </androidx.cardview.widget.CardView>
 
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cd_eliminarCuenta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@color/PrimarioClaro">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="#E32C2C"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageView14"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_outline_lock_24"
+                            app:tint="#FFFFFF" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tv_eliminarCuentas"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/opcion8"
+                        android:textAlignment="center"
+                        android:textColor="@color/Fuente1"
+                        android:textSize="24sp" />
+
+                    <ImageButton
+                        android:id="@+id/ib_eliminarCuentas"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
             <TextView
                 android:id="@+id/tv_modoOscuro"
                 android:layout_width="match_parent"
@@ -406,7 +460,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_weight="50"
-                android:text="Modo Oscuro"
+                android:text="@string/modoscuro"
                 android:textColor="@color/Fuente1"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -428,7 +482,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:layout_weight="1"
-                        android:text="Habilitar modo oscuro"
+                        android:text="@string/habmodoscuro"
                         android:textAlignment="textStart"
                         android:textColor="@color/Fuente1"
                         android:textSize="24sp" />

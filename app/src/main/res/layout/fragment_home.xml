@@ -52,7 +52,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_weight="3"
                             android:ems="10"
-                            android:hint="Buscar..."
+                            android:hint="@string/Buscar"
                             android:inputType="textPersonName"
                             android:textColor="@color/Fuente2" />
 
@@ -108,7 +108,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:fontFamily="sans-serif"
-                    android:text="Cuentos"
+                    android:text="@string/Cuentos"
                     android:textColor="@color/Fuente1"
                     android:textSize="26sp"
                     android:textStyle="bold"
@@ -119,7 +119,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:text="Ver todo"
+                    android:text="@string/Ver_todo"
                     android:textColor="#CD5A5A" />
             </LinearLayout>
 
@@ -188,7 +188,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="50"
-                                android:text="Hace 2 horas"
+                                android:text="@string/HaceXhoras"
                                 android:textColor="@color/Fuente2" />
                         </LinearLayout>
 
@@ -209,7 +209,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginBottom="20dp"
-                        android:text="Implementación de tecnologías para almacenar datos inalterables en base a datos específicos"
+                        android:text="@string/TextoEjemplo"
                         android:textColor="@color/Fuente2"
                         android:textSize="16sp" />
 
@@ -369,7 +369,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="50"
-                                android:text="Hace 3 horas"
+                                android:text="@string/HaceXhoras"
                                 android:textColor="@color/Fuente2" />
                         </LinearLayout>
 
@@ -390,7 +390,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginBottom="20dp"
-                        android:text="Implementación de tecnologías para almacenar datos inalterables en base a datos específicos"
+                        android:text="@string/TextoEjemplo"
                         android:textSize="16sp" />
 
                     <androidx.cardview.widget.CardView

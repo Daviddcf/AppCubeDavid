@@ -33,7 +33,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
                 android:fontFamily="sans-serif"
-                android:text="Ajustes"
+                android:text="@string/Ajustes"
                 android:textColor="@color/Fuente1"
                 android:textSize="26sp"
                 android:textStyle="bold"
@@ -74,7 +74,7 @@
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
                         android:layout_weight="1"
-                        android:text="Notificación de inserción"
+                        android:text="@string/opcion1"
                         android:textAlignment="center"
                         android:textColor="@color/Fuente1" />
 
@@ -125,7 +125,7 @@
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
                         android:layout_weight="1"
-                        android:text="Cuentas Vinculadas"
+                        android:text="@string/opcion2"
                         android:textAlignment="center"
                         android:textColor="@color/Fuente1" />
 
@@ -176,7 +176,7 @@
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
                         android:layout_weight="1"
-                        android:text="Bloquear cuentas"
+                        android:text="@string/opcion3"
                         android:textAlignment="center"
                         android:textColor="@color/Fuente1" />
 
@@ -228,7 +228,7 @@
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
                         android:layout_weight="1"
-                        android:text="Restablecer contraseña"
+                        android:text="@string/opcion4"
                         android:textAlignment="center"
                         android:textColor="@color/Fuente1" />
 
@@ -279,7 +279,7 @@
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
                         android:layout_weight="1"
-                        android:text="La configuración de privacidad"
+                        android:text="@string/opcion5"
                         android:textAlignment="center"
                         android:textColor="@color/Fuente1" />
 
@@ -331,7 +331,7 @@
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
                         android:layout_weight="1"
-                        android:text="Idioma"
+                        android:text="@string/opcion6"
                         android:textAlignment="center"
                         android:textColor="@color/Fuente1" />
 
@@ -383,7 +383,7 @@
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
                         android:layout_weight="1"
-                        android:text="Desconectar"
+                        android:text="@string/opcion7"
                         android:textAlignment="center"
                         android:textColor="@color/Fuente1" />
 
@@ -435,7 +435,7 @@
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
                         android:layout_weight="1"
-                        android:text="Eliminar mi cuenta"
+                        android:text="@string/opcion8"
                         android:textAlignment="center"
                         android:textColor="@color/Fuente1" />
 
@@ -460,7 +460,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_weight="50"
-                android:text="Modo Oscuro"
+                android:text="@string/modoscuro"
                 android:textColor="@color/Fuente1"
                 android:textStyle="bold" />
 
@@ -482,7 +482,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:layout_weight="1"
-                        android:text="Habilitar modo oscuro"
+                        android:text="@string/habmodoscuro"
                         android:textAlignment="textStart"
                         android:textColor="@color/Fuente1" />
 

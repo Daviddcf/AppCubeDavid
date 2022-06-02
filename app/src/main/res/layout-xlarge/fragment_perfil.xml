@@ -47,7 +47,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="5"
-                    android:text="Perfil"
+                    android:text="@string/Perfil"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
                     android:textSize="34sp"
@@ -346,7 +346,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="2dp"
                                 android:layout_marginRight="2dp"
-                                android:text="PUBLICACIONES"
+                                android:text="@string/Publicaciones"
                                 android:textColor="@color/Fuente2"
                                 android:textSize="24sp" />
 
@@ -356,7 +356,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="2dp"
                                 android:layout_marginRight="2dp"
-                                android:text="SEGUIDORES"
+                                android:text="@string/Seguidores"
                                 android:textColor="@color/Fuente2"
                                 android:textSize="24sp" />
 
@@ -366,7 +366,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="2dp"
                                 android:layout_marginRight="2dp"
-                                android:text="COMENTARIOS"
+                                android:text="@string/Comentarios"
                                 android:textColor="@color/Fuente2"
                                 android:textSize="24sp" />
 
@@ -376,7 +376,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="2dp"
                                 android:layout_marginRight="2dp"
-                                android:text="GUSTOS"
+                                android:text="@string/Gustos"
                                 android:textColor="@color/Fuente2"
                                 android:textSize="24sp" />
                         </TableRow>
@@ -389,7 +389,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:text="Sobre mí"
+                    android:text="@string/Sobre_mi"
                     android:textColor="@color/Fuente1"
                     android:textSize="24sp"
                     android:textStyle="bold" />
@@ -399,7 +399,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:text="Implementación de tecnologías para almacenar datos modificables basados en específicos de tecnologías para almacenar datos basados en específicos para almacenar datos basados en datos basados en específicos de específicos"
+                    android:text="@string/TextoEjemplo"
                     android:textColor="@color/Fuente2"
                     android:textSize="24sp" />
 
@@ -408,7 +408,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:text="Fotos"
+                    android:text="@string/Fotos"
                     android:textColor="@color/Fuente1"
                     android:textSize="24sp"
                     android:textStyle="bold" />
@@ -626,7 +626,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="50"
-                                    android:text="Hace 2 horas"
+                                    android:text="@string/HaceXhoras"
                                     android:textSize="24sp" />
                             </LinearLayout>
 
@@ -647,7 +647,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginBottom="20dp"
-                            android:text="Implementación de tecnologías para almacenar datos inalterables en base a datos específicos"
+                            android:text="@string/TextoEjemplo"
                             android:textColor="@color/Fuente2"
                             android:textSize="24sp" />
 

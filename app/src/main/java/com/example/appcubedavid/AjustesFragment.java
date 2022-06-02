@@ -58,7 +58,7 @@ public class AjustesFragment extends Fragment {
         CardView desconectar = root.findViewById(R.id.cd_desconectar);
         CardView resetPWD = root.findViewById(R.id.cd_restablecerPwd);
         CardView eliminarCuenta = root.findViewById(R.id.cd_eliminarCuenta);
-
+        CardView cambiarIdioma = root.findViewById(R.id.cd_cambiarIdioma);
 
 
         //conseguir el usuario que esta actualmente logueado
@@ -169,8 +169,19 @@ public class AjustesFragment extends Fragment {
             }
         });
 
+        cambiarIdioma.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Cambiar el fragment a idiomasFragment
+                IdiomasFragment idiomasFragment = new IdiomasFragment();
+                FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.replace(R.id.frameLayoutFragments, idiomasFragment);
+                transaction.commit();
 
-
+                // Establecer como activo el item de ajustes del BottomNavigationMenu
+                HomeActivity.bottomNavigationView.getMenu().findItem(R.id.ajustes).setChecked(true);
+            }
+        });
 
         return root;
 

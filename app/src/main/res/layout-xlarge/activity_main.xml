@@ -38,7 +38,7 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="20dp"
                 android:fontFamily="sans-serif"
-                android:text="Descubre una nueva historia que te encantará"
+                android:text="@string/Bienvenida"
                 android:textAlignment="center"
                 android:textColor="@color/Fuente1"
                 android:textSize="60sp"
@@ -54,7 +54,7 @@
                 android:layout_marginRight="40dp"
                 android:layout_marginBottom="20dp"
                 android:lineSpacingExtra="8sp"
-                android:text="Implementación de tecnologías para almacenar datos inalterables en base a datos específicos"
+                android:text="@string/TextoEjemplo"
                 android:textAlignment="center"
                 android:textColor="@color/Fuente3"
                 android:textSize="34sp" />
@@ -120,7 +120,7 @@
                 android:layout_marginRight="30dp"
                 android:layout_marginBottom="40dp"
                 android:backgroundTint="@color/blue"
-                android:text="Empezar"
+                android:text="@string/Empezar"
                 android:textAllCaps="false"
                 android:textSize="34sp" />
 

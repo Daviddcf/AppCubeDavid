@@ -40,7 +40,7 @@
                     android:layout_marginRight="20dp"
                     android:layout_marginBottom="20dp"
                     android:fontFamily="sans-serif"
-                    android:text="Inscribirse"
+                    android:text="@string/Inscribirse"
                     android:textColor="@color/Fuente1"
                     android:textSize="26sp"
                     android:textStyle="bold"
@@ -53,7 +53,7 @@
                     android:layout_marginRight="60dp"
                     android:layout_marginBottom="20dp"
                     android:lineSpacingExtra="8sp"
-                    android:text="Ingrese su dirección de correo electrónico en este campo para recuperar su contraseña"
+                    android:text="@string/TextoInscribirse"
                     android:textColor="@color/Fuente3"
                     android:textSize="16sp" />
 
@@ -62,7 +62,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
-                    android:text="Nombre de usuario"
+                    android:text="@string/NombreUsuario"
                     android:textColor="@color/Fuente2"
                     android:textSize="16sp" />
 
@@ -78,7 +78,7 @@
                     android:id="@+id/tv_contraseña1_inscribirse"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Contraseña"
+                    android:text="@string/Contraseña"
                     android:textColor="@color/Fuente2"
                     android:textSize="16sp" />
 
@@ -94,7 +94,7 @@
                     android:id="@+id/tv_contraseña2_inscribirse"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Contraseña"
+                    android:text="@string/Contraseña"
                     android:textColor="@color/Fuente2"
                     android:textSize="16sp" />
 
@@ -111,7 +111,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#0073FF"
-                    android:text="Registrarse"
+                    android:text="@string/Registrarse"
                     android:textAllCaps="false" />
 
                 <LinearLayout
@@ -127,7 +127,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginRight="5dp"
-                        android:text="¿Ya tienes cuenta?"
+                        android:text="@string/TienesCuenta"
                         android:textColor="@color/Fuente2" />
 
                     <TextView
@@ -135,7 +135,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="Registrarse."
+                        android:text="@string/Registrarse"
                         android:textColor="#3957FF"
                         android:textStyle="bold" />
                 </LinearLayout>
