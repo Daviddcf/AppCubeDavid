@@ -6,11 +6,15 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class HomeActivity extends AppCompatActivity {
 
+    public static BottomNavigationView bottomNavigationView;
+
+    //bottomNavigationView.getMenu().findItem(R.id.pantallaHome).setChecked(true);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,11 +23,14 @@ public class HomeActivity extends AppCompatActivity {
 
         cambiarFragment(new HomeFragment());
 
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        bottomNavigationView = findViewById(R.id.bottomNavigationView);
         bottomNavigationView.setOnItemSelectedListener(item -> {
             //listener para detectar cuando se pulsa uno de los botones del menú inferior
             switch (item.getItemId()){//switch que utiliza la id del boton que es pulsado
 
+                case R.id.pantallaHome:
+                    cambiarFragment(new HomeFragment());
+                    break;
                 case R.id.listaAmigos:
                     cambiarFragment(new AmigosFragment());
                     break;
@@ -39,8 +46,8 @@ public class HomeActivity extends AppCompatActivity {
             }
             return true;
         });
-    }
 
+    }
 
     public void cambiarFragment(Fragment fragment){
         FragmentManager fragmentManager = getSupportFragmentManager();

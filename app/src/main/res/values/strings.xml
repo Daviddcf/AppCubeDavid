@@ -8,10 +8,31 @@
     <string name="previous">Previous</string>
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="Cuentos">Cuentos</string>
+    <string name="Buscar">Buscar</string>
+    <string name="Ver_todo">Ver todo</string>
+    <string name="HaceXhoras">Hace 2 horas</string>
+    <string name="TextoEjemplo">Implementación de tecnologías para almacenar datos inalterables en base a datos específicos</string>
+    <string name="Amigos">Amigos</string>
+    <string name="Saludo">¿Qué tal cómo estas?</string>
+    <string name="Seguir">Seguir</string>
+    <string name="Perfil">Perfil</string>
+    <string name="Publicaciones">Publicaciones</string>
+    <string name="Seguidores">Seguidores</string>
+    <string name="Comentarios">Comentarios</string>
+    <string name="Gustos">Gustos</string>
+    <string name="Sobre_mi">Sobre mí</string>
+    <string name="Fotos">Fotos</string>
+    <string name="Mensajes">Mensajes</string>
+    <string name="Ajustes">Ajustes</string>
+    <string name="Bienvenida">Descubre una nueva historia que te encantará</string>
+    <string name="Empezar">Empezar</string>
     <string name="invalid_mail">Ingrese un correo válido</string>
     <string name="invalid_password">Ingrese una contraseña con al menos 6 digitos</string>
 
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

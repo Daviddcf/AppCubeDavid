@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
 
     int imagenes[]={R.drawable.slider1, R.drawable.slider2, R.drawable.slider3};
 
-    //comprobar si la app es abierta por primera vez
 
+    static boolean DarkMode;
 
 
 
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
         //comprobar si la app es abierta por primera vez
         boolean FirstTime = preferences.getBoolean("firststart", true);
-        boolean DarkMode = preferences.getBoolean("darkmode", false);
+        DarkMode = preferences.getBoolean("darkmode", false);
 
         if(DarkMode == true){
             ActivarModoscuro(this);
@@ -135,19 +135,23 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void ActivarModoscuro(Context context){
+    public static void ActivarModoscuro(Context context){
+        // Activar el modo oscuro
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
         SharedPreferences preferences = context.getSharedPreferences("PREFERENCE", context.MODE_PRIVATE);
 
+        // Almacenar en preferencias que el modo oscuro esta activado
         SharedPreferences.Editor editor = preferences.edit();
         editor.putBoolean("darkmode", true);
         editor.apply();
     }
 
-    public void DesactivarModoscuro(Context context){
+    public static void DesactivarModoscuro(Context context){
+        // Desactivar el modo oscuro
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         SharedPreferences preferences = context.getSharedPreferences("PREFERENCE", context.MODE_PRIVATE);
 
+        // Almacenar en preferencias que el modo oscuro esta desactivado
         SharedPreferences.Editor editor = preferences.edit();
         editor.putBoolean("darkmode", false);
         editor.apply();

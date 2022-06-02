@@ -11,6 +11,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
         android:backgroundTint="@color/orange"
         android:translationY="20dp"
         android:translationZ="20dp"

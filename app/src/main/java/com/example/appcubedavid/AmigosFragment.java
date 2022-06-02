@@ -27,6 +27,9 @@ public class AmigosFragment extends Fragment {
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 transaction.replace(R.id.frameLayoutFragments, homeFragment);
                 transaction.commit();
+
+                // Establecer como activo el item de home del BottomNavigationMenu
+                HomeActivity.bottomNavigationView.getMenu().findItem(R.id.pantallaHome).setChecked(true);
             }
         });
 

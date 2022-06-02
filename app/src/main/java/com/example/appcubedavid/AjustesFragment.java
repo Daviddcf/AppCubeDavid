@@ -3,6 +3,7 @@ package com.example.appcubedavid;
 import static android.content.ContentValues.TAG;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -10,7 +11,9 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatDelegate;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.util.Log;
@@ -39,19 +42,24 @@ public class AjustesFragment extends Fragment {
     private GoogleSignInOptions googleSignInOptions;
     private GoogleSignInClient googleSignInClient;
 
+    private Switch modoscuro;
+
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View root = inflater.inflate(R.layout.fragment_ajustes, container, false);
 
-
-        Switch modoscuro = root.findViewById(R.id.switch_modoscuro);
+        modoscuro = root.findViewById(R.id.switch_modoscuro);
 
         ImageButton volver = root.findViewById(R.id.b_volver_ajustes);
-        ImageButton desconectar = root.findViewById(R.id.ib_desconectar);
-        ImageButton resetPWD = root.findViewById(R.id.ib_cambiarContraseña);
-        ImageButton eliminarCuenta = root.findViewById(R.id.ib_eliminarCuentas);
+        CardView desconectar = root.findViewById(R.id.cd_desconectar);
+        CardView resetPWD = root.findViewById(R.id.cd_restablecerPwd);
+        CardView eliminarCuenta = root.findViewById(R.id.cd_eliminarCuenta);
+
+
 
         //conseguir el usuario que esta actualmente logueado
         firebaseAuth = FirebaseAuth.getInstance();
@@ -61,10 +69,14 @@ public class AjustesFragment extends Fragment {
         volver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Cambiar el fragment a home
                 HomeFragment homeFragment = new HomeFragment();
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 transaction.replace(R.id.frameLayoutFragments, homeFragment);
                 transaction.commit();
+
+                // Establecer como activo el item de home del BottomNavigationMenu
+                HomeActivity.bottomNavigationView.getMenu().findItem(R.id.pantallaHome).setChecked(true);
             }
 
         });
@@ -74,10 +86,6 @@ public class AjustesFragment extends Fragment {
             public void onClick(View v) {
 
                 firebaseAuth.signOut();//cerrar sesión de firebase
-
-
-
-
 
                 googleSignInOptions=new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                         .requestIdToken("225955144223-tetp006hqbjsu59l91asn8ospnd57vmh.apps.googleusercontent.com")//(R.string.default_web_client_id)
@@ -145,22 +153,22 @@ public class AjustesFragment extends Fragment {
             }
         });
 
-
         
         modoscuro.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked==true){
-                    MainActivity ma = new MainActivity();
-                    ma.ActivarModoscuro(getActivity());
-                    //modoscuro.setChecked(true);
-                }else if(isChecked==false){
-                    MainActivity ma = new MainActivity();
-                    ma.DesactivarModoscuro(getActivity());
-                    //modoscuro.setChecked(false);
+                    MainActivity.ActivarModoscuro(getActivity());
+                    // Establecer como activo el item de home del BottomNavigationMenu
+                    HomeActivity.bottomNavigationView.getMenu().findItem(R.id.pantallaHome).setChecked(true);
+                }else{
+                    MainActivity.DesactivarModoscuro(getActivity());
+                    // Establecer como activo el item de home del BottomNavigationMenu
+                    HomeActivity.bottomNavigationView.getMenu().findItem(R.id.pantallaHome).setChecked(true);
                 }
             }
         });
+
 
 
 
@@ -171,6 +179,22 @@ public class AjustesFragment extends Fragment {
 
     }
 
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        SharedPreferences preferences = getActivity().getSharedPreferences("PREFERENCE", Context.MODE_PRIVATE);
+
+        if(preferences.getBoolean("darkmode",false) == true){
+            modoscuro.setChecked(true);
+
+        }else {
+            modoscuro.setChecked(false);
+
+        }
+    }
+
+
     public void irLogin(){
         Intent i = new Intent(getContext(), LoginActivity.class);
         i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -179,7 +203,6 @@ public class AjustesFragment extends Fragment {
 
     public void irResetPWD(){
         Intent i = new Intent(getContext(), RestablecerPwdActivity.class);
-        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(i);
     }
 
