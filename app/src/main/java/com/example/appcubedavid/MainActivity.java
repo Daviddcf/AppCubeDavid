@@ -7,9 +7,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.viewpager.widget.ViewPager;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -21,6 +24,8 @@ import android.widget.Switch;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import java.util.Locale;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     static boolean DarkMode;
-
+    static String idioma;
 
 
 
@@ -46,12 +51,23 @@ public class MainActivity extends AppCompatActivity {
         //comprobar si la app es abierta por primera vez
         boolean FirstTime = preferences.getBoolean("firststart", true);
         DarkMode = preferences.getBoolean("darkmode", false);
+        idioma = preferences.getString("language", "English");
 
         if(DarkMode == true){
             ActivarModoscuro(this);
         }else{
             DesactivarModoscuro(this);
         }
+
+        /*
+        if(idioma.equals("English")){
+            IdiomasFragment idiomasFragment = new IdiomasFragment();
+            idiomasFragment.cambiarIngles(this);
+        }else if(idioma.equals("Español")){
+            IdiomasFragment idiomasFragment = new IdiomasFragment();
+            idiomasFragment.cambiarEspaniol(this);
+        }
+        */
 
         if(FirstTime==false){
 
@@ -75,7 +91,6 @@ public class MainActivity extends AppCompatActivity {
 
         }else {//si es la primera vez que se abre la app se muestra la pantalla de introducción y se anota en preferences que la app ya se ha abierto por primera vez
             SharedPreferences.Editor editor = preferences.edit();
-            //editor.putString("FirstTimeInstall", "Yes");
             editor.putBoolean("firststart", false);
             editor.apply();
         }
@@ -134,6 +149,9 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+
+
 
     public static void ActivarModoscuro(Context context){
         // Activar el modo oscuro

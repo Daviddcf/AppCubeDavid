@@ -33,7 +33,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
                 android:fontFamily="sans-serif"
-                android:text="Ajustes"
+                android:text="@string/Ajustes"
                 android:textColor="@color/Fuente1"
                 android:textSize="26sp"
                 android:textStyle="bold"
@@ -47,6 +47,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginBottom="20dp"
                 android:layout_weight="50"
+                android:text="@string/seleccionarIdioma"
                 android:textColor="@color/Fuente1"
                 android:textStyle="bold" />
 
